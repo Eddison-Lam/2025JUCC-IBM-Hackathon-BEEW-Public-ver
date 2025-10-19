@@ -40,7 +40,8 @@ Performance: O(n²)
 4. Upload sample CSV files (format described in the app) to test the interface.
 
 ## Input format
-Student csv: cgpa, major, language_certificate, courses_studied, exchange_1, exchange_description_1, exchange_2, exchange_description_2, eca_project_experience_1, Eeca_project_description_1, eca_project_experience_2, eca_project_description_2, eca_project_experience_3, eca_project_description_3, recommendation_letter, scholarships_awards, hobbies, student_preference
+Student csv: cgpa, major, language_certificate, courses_studied, exchange_1, exchange_description_1, exchange_2, exchange_description_2, eca_project_experience_1, Eeca_project_description_1, eca_project_experience_2, eca_project_description_2, eca_project_experience_3, eca_project_description_3, recommendation_letter, scholarships_awards, hobbies, student_preference  
+
 Program csv: gpa_req, quota, course_req, extra_req
 
 ## Output
