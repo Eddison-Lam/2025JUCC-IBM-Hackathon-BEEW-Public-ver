@@ -60,7 +60,6 @@ Program csv: gpa_req, quota, course_req, extra_req
 ## Notes
 - This public version excludes proprietary AI matching algorithms and database logic.
 - For a live demo or access to the full project, you can contact me to request a GitHub collaborator invite or Codespaces demo.
-- Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) to restrict reuse.
 
 ## Acknowledgments
 Built as part of the 2025 JUCC Hackathon. Powered by Streamlit, Plotly, ibm_watsonx_ai and Python.
