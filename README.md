@@ -7,7 +7,16 @@ collaborators: bobbyleung1225, EthanNotEven, Fewsnowxd
 ## Overview
 This project is a web-based application designed to match students with international exchange programs based on their qualifications and preferences. Built for the 2025 JUCC Hackathon, it features a modern Streamlit interface, data visualization with Plotly, and cross-platform setup scripts for Windows and Linux/macOS. The application processes student and program data to generate optimal matches, showcasing skills in Python, web development, and automation.
 
-**Note**: This public repository contains the frontend and setup components. The full project, including AI-driven matching logic, is available in a private repository for authorized collaborators. Contact me for demo access.
+**Note**: This public repository contains the frontend and setup components. The full project, including AI-driven matching logic, is available in a private repository for authorized collaborators. You can contact me for demo access.
+ 
+## Algorithm Workflow
+The matching algorithm:
+1. Parses student and program data from CSV inputs.
+2. Store data in MySQL for scalability and efficient filtering
+3. Evaluates compatibility using weighted criteria (e.g., academic qualifications, preferences). Retrieves each program’s preferences (e.g., academic qualifications, skills, interests) and identifies matching students.  
+4. Ranks matches for optimal pairing (Gale-Shapley algorithm).  
+5. Outputs results to the Streamlit UI and CSV export.  
+Performance: O(n²)  
 
 ## Features
 - **User Interface**: Streamlit-based dashboard for uploading student/program data and viewing match results.
@@ -30,11 +39,15 @@ This project is a web-based application designed to match students with internat
 3. Open the app in your browser (typically `http://localhost:8501`).
 4. Upload sample CSV files (format described in the app) to test the interface.
 
+## Input format
+Student csv: cgpa, major, language_certificate, courses_studied, exchange_1, exchange_description_1, exchange_2, exchange_description_2, eca_project_experience_1, Eeca_project_description_1, eca_project_experience_2, eca_project_description_2, eca_project_experience_3, eca_project_description_3, recommendation_letter, scholarships_awards, hobbies, student_preference
+Program csv: gpa_req, quota, course_req, extra_req
+
 ## Output
 - Displays a table of student-to-program matches and a pie chart of match rate.
 - Export results as CSV or a summary report.
 
-**Performance**: The UI is responsive, but full matching logic (in private repo) may take O(n²) time due to gale-shapley algorithm.
+**Performance**: The UI is responsive, but full matching logic (in private repo) may take O(n²) time due to Gale-Shapley algorithm.
 
 ## Project Structure
 - `ui.py`: Streamlit frontend for data input and result visualization.
@@ -45,7 +58,7 @@ This project is a web-based application designed to match students with internat
 
 ## Notes
 - This public version excludes proprietary AI matching algorithms and database logic.
-- For a live demo or access to the full project, contact me to request a GitHub collaborator invite or Codespaces demo.
+- For a live demo or access to the full project, you can contact me to request a GitHub collaborator invite or Codespaces demo.
 - Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) to restrict reuse.
 
 ## Acknowledgments
